@@ -1,5 +1,6 @@
 pandas
 numpy
+scikit-learn
 setuptools
 google-cloud-storage
 pyyaml
@@ -8,4 +9,4 @@ dvc
 dvc-gs
 flask
 joblib
-gcloud
+tensorflow
