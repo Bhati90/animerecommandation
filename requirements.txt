@@ -1,5 +1,6 @@
 pandas
-numpy
+numpy==1.23.5
+
 scikit-learn
 setuptools
 google-cloud-storage
@@ -9,4 +10,4 @@ dvc
 dvc-gs
 flask
 joblib
-tensorflow
+tensorflow==2.10.0
