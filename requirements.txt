@@ -1,0 +1,13 @@
+pandas
+numpy==1.23.5
+
+scikit-learn
+setuptools
+google-cloud-storage
+pyyaml
+comet-ml
+dvc
+dvc-gs
+flask
+joblib
+tensorflow==2.10.0

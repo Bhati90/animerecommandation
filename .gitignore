@@ -1,0 +1,9 @@
+artifacts/raw/
+artifacts/processed/
+artifacts/models/
+artifacts/weights/
+artifacts/checkpoints/
+logs
+animep.egg-info
+venv/
+.env

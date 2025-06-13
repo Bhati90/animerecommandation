@@ -1,0 +1,159 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('https://wallpapercave.com/wp/wp6442841.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: -1;
+}
+
+/* Form Container */
+.form-container {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1.5px solid #f0c93a;
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    animation: fadeIn 1s ease;
+}
+
+/* Heading */
+.form-container h1 {
+    color: #f0c93a;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #ddd;
+    margin-bottom: 25px;
+}
+
+/* Label & Input */
+label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 8px;
+    text-align: left;
+    color: #fff;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    margin-bottom: 20px;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+
+input[type="number"]:focus {
+    box-shadow: 0 0 10px #f0c93a;
+}
+
+/* Button */
+button {
+    background: #ff4500;
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    font-weight: 600;
+}
+
+button:hover {
+    background: #f0c93a;
+    transform: scale(1.05);
+    color: #000;
+}
+
+/* Results */
+.results-container {
+    margin-top: 30px;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 15px;
+    border-left: 5px solid #f0c93a;
+}
+
+.results-container h2 {
+    margin-bottom: 15px;
+    color: #f0c93a;
+    font-size: 1.4rem;
+}
+
+.results-container ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.results-container li {
+    margin-bottom: 10px;
+    padding: 8px 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    border-left: 3px solid #ff4500;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .form-container {
+        padding: 20px;
+    }
+
+    .form-container h1 {
+        font-size: 1.6rem;
+    }
+
+    .subtitle {
+        font-size: 0.95rem;
+    }
+}
