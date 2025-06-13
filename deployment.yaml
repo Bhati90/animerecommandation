@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: animerecom
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: animerecom
+  template:
+    metadata:
+      labels:
+        app: animerecom
+    spec:
+      containers:
+      - name: ml-app-container
+        image: gcr.io/rm-instant-index-392716/ml-project:latest
+        ports:
+        - containerPort: 5000  # Replace with the port your app listens on
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ml-app-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: animerecom
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 5000
