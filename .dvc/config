@@ -1,0 +1,7 @@
+[core]
+    remote = myreomote
+['remote "myremote"']
+    url = gs://dvc1/
+    credentialpath = C:\Users\bhati\Downloads\rm-instant-index-392716-b623379e3801.json
+['remote "myreomote"']
+    url = gs://dvc1/
