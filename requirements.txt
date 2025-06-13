@@ -10,4 +10,4 @@ dvc
 dvc-gs
 flask
 joblib
-tensorflow==2.10.0
+tensorflow
